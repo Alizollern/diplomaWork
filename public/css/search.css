@@ -1,0 +1,221 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif, Monteserat;
+    background: #F8F9FF;
+}
+
+.header {
+    border-bottom: 1px solid #E5E5E5;
+    padding: 25px 0;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+/*.logo img {*/
+/*    vertical-align: bottom;*/
+/*}*/
+.header .logo{
+    position: absolute;
+    font-size: 1.8rem;
+    color:#130f40;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.header .logo span{
+    color:#009379;
+}
+
+.header .logo a{
+    text-decoration: none;
+}
+.login-btn{
+    margin-left: 1070px;
+}
+
+.button {
+    padding: 5px;
+    /*width: 334px;*/
+    /*height: 64px;*/
+    background: #009379;
+    border: 0;
+    border-radius: 45px;
+    box-sizing: border-box;
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    /*color will change slowly with" transition"*/
+    transition: background-color .5s;
+}
+
+.button:hover {
+    cursor: pointer;
+    background: #076750;
+}
+
+.login-btn .button{
+    padding: 6px;
+    color:#E5E5E5;
+    width:100px;
+
+}
+
+.poisk{
+    display: flex;
+    justify-content: center;
+}
+
+.price-form{
+    max-width: 844px;
+    padding:40px 210px;
+    display: flex;
+    /*align-items: center;*/
+
+}
+.price-input{
+    padding: 22px 18px;
+    width: 844px;
+    height: 65px;
+    background: #FFFFFF;
+    border: 1px solid #5D5D5F;
+    border-radius: 15px;
+    box-sizing: border-box;
+
+    font-size: 16px;
+    color: #000000;
+    outline: none;
+    margin-bottom: 15px;
+}
+.price-input::placeholder{
+    color: #5D5D5F;
+}
+.poisk .button{
+    padding: 10px;
+    margin-left: 20px;
+    width: 120px;
+    color: #E5E5E5;
+}
+
+.res{
+    background: #ffffff;
+    border-radius: 15px;
+    border: 1px solid #5D5D5F;
+    padding: 100px 10px;
+    margin-bottom: 45px;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+}
+.title{
+    padding: 40px;
+}
+.title h1 {
+    font-size: 30px;
+    color: #130f40;
+    margin-bottom: 20px;
+}
+.title p{
+    font-size: 20px;
+    margin: 20px 4px;
+}
+
+
+
+.new{
+    overflow: hidden;/*Это помагает когда если картинка больше , тогда картинка обрезалось*/
+
+}
+.new .container{
+    position: relative;
+    padding-bottom: 121px;
+}
+.new .news{
+    height: 11rem;
+    padding: 75px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border:.1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    background: #f2bfaf;
+}
+
+.new .sub-title{
+    margin-bottom: 20px;
+}
+
+.news-text{
+    font-size: 16px;
+    line-height: 130%;
+    color: #5D5D5F;
+    margin-bottom: 20px;
+}
+.circ{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 35px solid #ff6250;
+    right: 0;
+    top: -70px;
+    transform:rotate(-180deg);
+
+
+}
+.circ2{
+    position: absolute;
+    width: 270px;
+    height: 150px;
+    border-top-left-radius: 140px;
+    border-top-right-radius: 140px;
+    background: #ff6250;
+    right: 420px;
+    bottom: 120px;
+}
+
+
+
+.footer{
+    border-top: 1px solid #E5E5E5;
+    padding: 25px 0;
+    background: #2D2D2D;
+}
+.footer a{
+    text-decoration: none;
+}
+
+.footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rights{
+    font-size: 15px;
+    color: #E5E5E5;
+}
+.rights i{
+    padding-right:35px;
+    font-size: 1.1rem;
+}
+.footer .logo{
+    font-size: 1.1rem;
+    color:#E5E5E5;
+    font-weight: bold;
+}
+.footer .logo span{
+    color:#009379;
+}

@@ -1,0 +1,159 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif, Monteserat;
+    background: #F8F9FF;
+}
+
+.header {
+    border-bottom: 1px solid #E5E5E5;
+    padding: 25px 0;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+/*.logo img {*/
+/*    vertical-align: bottom;*/
+/*}*/
+.header .logo{
+    /*position: absolute;*/
+    font-size: 1.8rem;
+    color:#130f40;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.header .logo span{
+    color:#009379;
+}
+
+.header .logo a{
+    text-decoration: none;
+}
+.login-btn{
+    margin-left: 1070px;
+}
+.login-btn a{
+    text-decoration: none;
+    color: #E5E5E5;
+}
+.button {
+    padding: 20px;
+    width: 334px;
+    height: 64px;
+    background: #009379;
+    border: 0;
+    border-radius: 45px;
+    box-sizing: border-box;
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    /*color will change slowly with" transition"*/
+    transition: background-color .5s;
+}
+
+.button:hover {
+    cursor: pointer;
+    background: #076750;
+}
+
+
+.price{
+    overflow: hidden;/*Это помагает когда если картинка больше , тогда картинка обрезалось*/
+    margin: 100px 0;
+}
+.price .container{
+    position: relative;
+    background: #e5f4f2;
+    border-radius: 25px;
+    width: 1200px;
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+
+.price .sub-title{
+    text-align: center;
+    margin: 25px;
+    color: #130f40;
+}
+.price-form{
+    max-width: 344px;
+    padding:40px 210px;
+
+}
+.price-input{
+    padding: 22px 18px;
+    width: 344px;
+    height: 65px;
+    background: #FFFFFF;
+    border: 1px solid #5D5D5F;
+    border-radius: 15px;
+    box-sizing: border-box;
+
+    font-size: 16px;
+    color: #000000;
+    outline: none;
+    margin-bottom: 15px;
+}
+.price-input::placeholder{
+    color: #5D5D5F;
+}
+
+.price .button{
+    width: 100%;
+}
+.price-image{
+    position: absolute;
+    bottom: 130px;
+    left: 720px;
+    width: 282px;
+}
+
+
+
+
+.footer{
+    border-top: 1px solid #E5E5E5;
+    padding: 25px 0;
+    background: #2D2D2D;
+}
+.footer a{
+    text-decoration: none;
+}
+
+.footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rights{
+    font-size: 15px;
+    color: #E5E5E5;
+}
+.rights i{
+    padding-right:35px;
+    font-size: 1.1rem;
+}
+.footer .logo{
+    font-size: 1.1rem;
+    color:#E5E5E5;
+    font-weight: bold;
+}
+.footer .logo span{
+    color:#009379;
+}
