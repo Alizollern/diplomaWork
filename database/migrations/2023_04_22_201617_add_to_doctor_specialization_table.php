@@ -11,9 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('appointments', function (Blueprint $table) {
-            //
-            $table->string('hospital_name')->after('appointment_date');
+        Schema::table('doctors', function (Blueprint $table) {
+            $table->unsignedBigInteger('doctor_specialist')->after('doctor_name');
+            $table->foreign('doctor_specialist')->references('id')->on('specialization')->onDelete('cascade');
         });
     }
 
@@ -22,9 +22,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('appointments', function (Blueprint $table) {
+        Schema::table('doctors', function (Blueprint $table) {
             //
-            $table->dropColumn('hospital_name');
         });
     }
 };

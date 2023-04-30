@@ -11,9 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('appointments', function (Blueprint $table) {
-            //
-            $table->string('doctor_specialist')->after('hospital_name');
+        Schema::create('specialization', function (Blueprint $table) {
+            $table->id();
+            $table->string("name");
+            $table->timestamps();
         });
     }
 
@@ -22,9 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('appointments', function (Blueprint $table) {
-            //
-            $table->dropColumn('doctor_specialist');
-        });
+        Schema::dropIfExists('specialization');
     }
 };

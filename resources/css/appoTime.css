@@ -1,0 +1,301 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif, Monteserat;
+    background: #F8F9FF;
+}
+
+.header {
+    border-bottom: 1px solid #E5E5E5;
+    padding: 25px 0;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+/*.logo img {*/
+/*    vertical-align: bottom;*/
+/*}*/
+.header .logo{
+    position: absolute;
+    font-size: 1.8rem;
+    color:#130f40;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.header .logo span{
+    color:#009379;
+}
+
+.header .logo a{
+    text-decoration: none;
+}
+.login-btn{
+    margin-left: 1070px;
+}
+
+.button {
+    padding: 5px;
+    /*width: 334px;*/
+    /*height: 64px;*/
+    background: #009379;
+    border: 0;
+    border-radius: 45px;
+    box-sizing: border-box;
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    /*color will change slowly with" transition"*/
+    transition: background-color .5s;
+}
+
+.button:hover {
+    cursor: pointer;
+    background: #076750;
+}
+
+.login-btn .button{
+    padding: 6px;
+    color:#E5E5E5;
+    width:100px;
+
+}
+
+/*.client{*/
+/*    background: #FFFFFF;*/
+/*    border-radius: 15px;*/
+/*    border: 1px solid #5D5D5F;*/
+/*    !*padding: 10px 10px;*!*/
+/*    margin-bottom: 45px;*/
+/*    min-height:500px;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    cursor: pointer;*/
+/*}*/
+/*.spec_name{*/
+/*    padding: 25px;*/
+/*}*/
+/*.spec_name a{*/
+/*    text-decoration: none;*/
+/*    color: #130f40;*/
+/*    margin: 40px;*/
+/*    font-size: 25px;*/
+/*    font-weight: bold;*/
+/*}*/
+/*.spec_name a:hover{*/
+/*    color:#75c2b5;*/
+/*}*/
+.dropbtn {
+    background-color: #009379;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #076750;
+}
+
+.dropdown {
+    margin: 20px 20px 20px 0;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+/*****888888888888888888*/
+.doctor{
+    /*color: #130f40;*/
+    border: 1px solid #5D5D5F;
+    border-radius: 15px;
+    margin: 10px 0 50px 0;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    /*margin-bottom: 30px;*/
+    background: white;
+}
+.doctor img{
+    width: 200px;
+    height: 200px;
+}
+.image{
+    display: flex;
+}
+.image2{
+    margin-top: 25px;
+}
+.image2 h1{
+    margin-bottom:15px;
+}
+.image2 h1 a{
+   text-decoration: none;
+    color: #130f40;
+}
+.image2 h3{
+    margin-bottom:15px;
+    color: #5D5D5F;
+
+}
+.image2 h4{
+    margin-bottom:15px;
+    color: #5D5D5F;
+}
+.image2 span{
+    background: #009379;
+    color: white;
+    border-radius: 3px;
+    padding:3px;
+}
+.image3 {
+    margin: 25px;
+    color: #666666;
+}
+.image3 h2{
+    margin-bottom: 15px;
+}
+.btn{
+    /*float: right;*/
+    padding: 15px;
+    width: 200px;
+    background: #009379;
+    border: 0;
+    border-radius: 25px;
+    box-sizing: border-box;
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    /*color will change slowly with" transition"*/
+    transition: background-color .5s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: #076750;
+}
+/*****888888888888888888*/
+
+
+.new{
+    overflow: hidden;/*Это помагает когда если картинка больше , тогда картинка обрезалось*/
+
+}
+.new .container{
+    position: relative;
+    padding-bottom: 121px;
+}
+.new .news{
+    height: 11rem;
+    padding: 75px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border:.1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    background: #f2bfaf;
+}
+
+.new .sub-title{
+    margin-bottom: 20px;
+}
+
+.news-text{
+    font-size: 16px;
+    line-height: 130%;
+    color: #5D5D5F;
+    margin-bottom: 20px;
+}
+.circ{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 35px solid #ff6250;
+    right: 0;
+    top: -70px;
+    transform:rotate(-180deg);
+
+
+}
+.circ2{
+    position: absolute;
+    width: 270px;
+    height: 150px;
+    border-top-left-radius: 140px;
+    border-top-right-radius: 140px;
+    background: #ff6250;
+    right: 420px;
+    bottom: 120px;
+}
+
+
+
+.footer{
+    border-top: 1px solid #E5E5E5;
+    padding: 25px 0;
+    background: #2D2D2D;
+}
+.footer a{
+    text-decoration: none;
+}
+
+.footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rights{
+    font-size: 15px;
+    color: #E5E5E5;
+}
+.rights i{
+    padding-right:35px;
+    font-size: 1.1rem;
+}
+.footer .logo{
+    font-size: 1.1rem;
+    color:#E5E5E5;
+    font-weight: bold;
+}
+.footer .logo span{
+    color:#009379;
+}

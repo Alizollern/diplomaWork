@@ -45,10 +45,9 @@ return [
             'provider' => 'users',
             'hash' => false,
         ],
-        'doctor-api' => [
-            'driver' => 'jwt',
+        'doctor'=>[
+            'driver' => 'session',
             'provider' => 'doctor',
-            'hash' => false,
         ],
         'pharmacy-api' => [
             'driver' => 'jwt',

@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif, Monteserat;
+    background: #F8F9FF;
+    height: 100%;
+}
+
+.header {
+    border-bottom: 1px solid #E5E5E5;
+    padding: 25px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+/*.logo img {*/
+/*    vertical-align: bottom;*/
+/*}*/
+.header .logo{
+    margin-left: 250px;
+    font-size: 1.8rem;
+    color:#130f40;
+    font-weight: bold;
+    position: absolute;
+    margin-bottom: 35px;
+}
+.header .logo span{
+    color:#009379;
+}
+
+.header .logo a{
+    text-decoration: none;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    background:#009379;
+    color:#E5E5E5;
+    cursor: pointer;
+    font-size: 1.4rem;
+    border-radius: 35px;
+    font-weight: 500;
+    text-align: center;
+    border: 0;
+}
+
+.btn:hover{
+    background: #076750;
+}
+
+.menu {
+    margin-left: 244px;
+}
+
+.menu ul {
+    list-style: none; /*deleted standard list icons*/
+    display: flex;
+}
+
+.menu-item {
+    margin-right: 75px;
+    /*background: #009379;*/
+}
+
+.menu-item a {
+    font-size: 20px;
+    color: #130f40;
+    text-decoration: none; /*deleted standard link line*/
+}
+
+.menu-item a:hover {
+    /*border-bottom: 2px solid black;*/
+    color: #009379;
+}
+
+/*.recept-title .container{*/
+/*    padding: 5px;*/
+/*}*/
+
+
+.btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    margin-left: 10px;
+}
+/*.title{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    margin: 15px 0;*/
+/*    padding: 25px;*/
+/*    border: 1px solid #E5E5E5;*/
+/*    width: 350px;*/
+/*    border-radius: 20px;*/
+/*    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);*/
+/*    background: #ffffff;*/
+
+/*}*/
+/*.title a{*/
+/*    text-decoration: none;*/
+/*}*/
+/*.title:hover h2 {*/
+/*    color: #75c2b5;*/
+/*}*/
+/*.recept-title h2{*/
+/*    margin-left: 25px;*/
+/*    color: #130f40;*/
+/*}*/
+/*.recept-title i {*/
+/*    font-size: 25px;*/
+/*    color: #75c2b5;*/
+/*}*/
+
+
+.recepts{
+    margin: 40px;
+}
+.recepts .container{
+    /*padding: 5px;*/
+    min-height: 1000px;
+    border-radius: 20px;
+    border: 1px solid #E5E5E5;
+    margin-bottom: 40px;
+    background: #cce9e4;
+}
+
+.back_fone{
+    display: flex;
+    justify-content: center;
+}
+
+
+.recept-form{
+    max-width: 500px;
+    padding:40px;
+    display: flex;
+    align-items: center; /* Not necessary but will center the items */
+    flex-direction: column; /* Not necessary but tells that they should be in a row */
+
+}
+.title_inp{
+    padding: 22px 18px;
+    width: 500px;
+    height: 65px;
+    background: #FFFFFF;
+    border: 1px solid #5D5D5F;
+    border-radius: 15px;
+    box-sizing: border-box;
+
+    font-size: 16px;
+    color: #000000;
+    outline: none;
+    margin-bottom: 15px;
+}
+.title_inp::placeholder{
+    color: #5D5D5F;
+}
+
+.recept-form textarea{
+    border: 1px solid #5D5D5F;
+    border-radius: 15px;
+    width: 500px;
+    height: 290px;
+    margin-bottom: 10px;
+    /*line-height: 280px;*/
+    font-size: 16px;
+    padding: 15px;
+}
+.recept-form .button{
+    margin-left: 50px;
+}
+.textarea::placeholder{
+    color: #5D5D5F;
+}
+
+
+
+
+
+.footer{
+    border-top: 1px solid #E5E5E5;
+    padding: 25px 0;
+    background: #2D2D2D;
+}
+.footer a{
+    text-decoration: none;
+}
+
+.footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rights{
+    font-size: 15px;
+    color: #E5E5E5;
+}
+.rights i{
+    padding-right:35px;
+    font-size: 1.1rem;
+}
+.footer .logo{
+    font-size: 1.1rem;
+    color:#E5E5E5;
+    font-weight: bold;
+}
+.footer .logo span{
+    color:#009379;
+}

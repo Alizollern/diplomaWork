@@ -27,7 +27,7 @@
     <div class="container">
         <div class="title">
             <i class="fas fa-pen"></i>
-            <h2><a href="#">Give new recept</a></h2>
+            <h2><a href="{{route('doctor.reciept',['employee_id' => $user->id,'full_name' => $user->full_name,'IIN' => $user->IIN, 'avatar' => $user->avatar])}}">Give new recept</a></h2>
         </div>
     </div>
 </section>
@@ -36,55 +36,29 @@
     <div class="container">
         <div class="user">
             <div class="pharm_info">
-                <h1>Name: Rashid</h1>
-                <h1>Lastname: Bukanov</h1>
-                <h1>IIN: 020302345678</h1>
-                <h1>DOB: 02.03.2002y</h1>
-                <h1>Email: RashidBukanov@gmail.com</h1>
+                <h1>Name: {{$user->full_name}}</h1>
+                <h1>IIN: {{$user->IIN}}</h1>
+                <h1>DOB: {{$user->date_of_birth}}</h1>
+                <h1>Email: {{$user->email}}</h1>
             </div>
             <div class="pharm_img">
                 <img src="{{asset('../photo/user.png')}}" alt="UserImage">
             </div>
         </div>
         <div class="recepts">
+            @foreach($data as $receipt)
             <div class="recepts-lists">
                 <div class="left">
-                    <h3 style="float: left">Receipt <span>№3</span></h3>
-                    <h3 style="float: right">02.04.2023</h3>
+                    <h3 style="float: left">Receipt <span>{{$receipt->id}}</span></h3>
+                    <h3 style="float: right">{{$receipt->receipt_date}}</h3>
                     <h3><a href="#">More Information</a></h3>
                 </div>
                 <div class="right">
-                    <h3>The name</h3>
-                    <h3>Dosage</h3>
-                    <h3>Type of medication</h3>
+                    <h3>The name: {{$receipt->receipt_title}}</h3>
                 </div>
             </div>
+            @endforeach
 
-            <div class="recepts-lists">
-                <div class="left">
-                    <h3 style="float: left">Receipt <span>№2</span></h3>
-                    <h3 style="float: right">02.04.2023</h3>
-                    <h3><a href="#">More Information</a></h3>
-                </div>
-                <div class="right">
-                    <h3>The name</h3>
-                    <h3>Dosage</h3>
-                    <h3>Type of medication</h3>
-                </div>
-            </div>
-
-            <div class="recepts-lists">
-                <div class="left">
-                    <h3 style="float: left">Receipt <span>№1</span></h3>
-                    <h3 style="float: right">02.04.2023</h3>
-                    <h3><a href="#">More Information</a></h3>
-                </div>
-                <div class="right">
-                    <h3>The name</h3>
-                    <h3>Dosage</h3>
-                    <h3>Type of medication</h3>
-                </div>
-            </div>
         </div>
 
     </div>

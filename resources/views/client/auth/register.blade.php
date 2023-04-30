@@ -29,7 +29,7 @@
 
 <section class="price" id="#">
     <div class="container">
-        <form action="{{route('user.register')}}" class="price-form">
+        <form action="{{route('register.post')}}" class="price-form" method="POST">
             @csrf
             <h2 class="sub-title">Registration</h2>
             <label> <input type="text" class="price-input" name="name" placeholder="Your name" required /></label>

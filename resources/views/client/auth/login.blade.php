@@ -22,13 +22,13 @@
 </header>
 <section class="login" id="#">
     <div class="container">
-        <form action="{{route('user.login')}}" class="login-form">
+        <form action="{{route('login.post')}}" class="login-form" method="POST">
             <h2 class="sub-title">User Login</h2>
             @csrf
             <input type="email" class="login-input" name="email" placeholder="Ваше email" required />
             <input type="password" class="login-input" name="password" placeholder="Ваш password" required />
             <button class="button" type="submit" id="price-action">Login</button>
-            <button class="button" type="button" id="" onclick="window.location.href='{{route('user.index.register')}}'">Register</button>
+            <button class="button" type="button" id="" onclick="window.location.href='{{route('register')}}'">Register</button>
         </form>
         <img src="{{asset('photo/iphone2.png')}}" alt="Rolls" class="login-image">
     </div>

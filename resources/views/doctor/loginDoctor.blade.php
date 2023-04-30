@@ -22,7 +22,7 @@
 </header>
 <section class="login" id="#">
     <div class="container">
-        <form class="login-form" action = "{{ route('dLogin')}} ">
+        <form class="login-form" action = "{{ route('login.post.doctor')}} " method="POST">
             @csrf
             <h2 class="sub-title">Doctor Login</h2>
 

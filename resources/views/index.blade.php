@@ -57,7 +57,9 @@
                 we advise you to get acquainted with our website closer
             </div>
             <div class="main-action">
-                <button class="button" id="main-action" onclick="">Получить appointment</button>
+                <form action="{{route('appoinment.index')}}">
+                <button class="button" id="main-action" type="submit" onclick="">Получить appointment</button>
+                </form> 
             </div>
 
         </div>

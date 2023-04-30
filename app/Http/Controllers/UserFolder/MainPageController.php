@@ -4,6 +4,8 @@ namespace App\Http\Controllers\UserFolder;
 
 use App\Http\Controllers\Controller;
 use App\Models\Pharmacy;
+use App\Models\Receipt;
+use App\Models\Doctor;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -69,5 +71,23 @@ class MainPageController extends Controller
         $id = $user_info->id;
         $data = DB::table('receipts')->where('receipt_user_id', $id)->get();
         return view('client.receipts')->with('data',$data);
+    }
+
+    public function getInformationReceipt(Request $request){
+        $id = $request->id;
+        $data = DB::table('medicine_receipts')->where('receipt_id',$id)->pluck('medicine_id')->toArray();
+        $doctorID = DB::table('receipts')->where('id',$id)->value('receipt_doctor_id');
+        $receipt = Receipt::where('id',$id)->first();
+        $doctor = Doctor::where('id',$doctorID)->first();
+        $med = array();
+        foreach ($data as $idMedicines) {
+            $medicines = DB::table('medicines')->where('id', $idMedicines)->get();
+            foreach ($medicines as  $medicine) {
+                $med[$medicine->id] = $medicine;
+            }
+        }
+
+        return view('client.recept_page',['receipt' => $receipt, 'med' => $med, 'doctor' => $doctor]);
+        
     }
 }

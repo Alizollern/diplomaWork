@@ -64,7 +64,7 @@
             <div class="left">
                 <h3 style="float: left">Receipt <span>№{{$receipt->id}}</span></h3>
                 <h3 style="float: right">{{$receipt->receipt_date}}</h3>
-                <h3><a href="{{asset('recept_page.blade.php')}}">More Information</a></h3>
+                <h3><a href="{{route('client.receipt.information',['id' => $receipt->id])}}">More Information</a></h3>
             </div>
             <div class="right">
                 <h3>{{$receipt->receipt_title}}</h3>

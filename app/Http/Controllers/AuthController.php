@@ -13,12 +13,12 @@ class AuthController extends Controller
 {
     public function index()
     {
-        return view('test.login');
+        return view('client.auth.login');
     }
 
     public function registration()
     {
-        return view('test.register');
+        return view('client.auth.register');
     }
 
     public function postLogin(Request $request)

@@ -12,13 +12,19 @@ use Illuminate\Database\Eloquent\Model;
 class Appointment extends Model
 {
     use HasFactory;
-    protected $fillable = [
-        'appointment_reason',
+    protected $fillable = [  
         'availble_id',
-        'appointment_number',
         'days_id',
         'appointment_user_id',
         'appointment_doctor_id',
 
     ];
+
+    public function doctor(){
+    	return $this->hasMany('App\Doctor');
+    }
+
+    public function user(){
+    	return $this->hasMany('App\User');
+    }
 }
