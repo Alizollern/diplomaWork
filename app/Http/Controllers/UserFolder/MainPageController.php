@@ -57,13 +57,13 @@ class MainPageController extends Controller
     }
 
     public function contact(Request $request){
-    //     // // try {
-    //     // //     DB::insert('insert into comments (email,comment ) values (?, ?)', [$email, $sms]);
-    //     // //     $queryStatus = "Successful";
-    //     // // } catch(Exception $e) {
-    //     // //     $queryStatus = "Not success";
-    //     // // }
-    //     // return view('client.contact');
+        try {
+            DB::insert('insert into comments (email,comment ) values (?, ?)', [$email, $sms]);
+            $queryStatus = "Successful";
+        } catch(Exception $e) {
+            $queryStatus = "Not success";
+        }
+        return view('client.contact');
      }
 
     public function getReceipt(Request $request){
@@ -89,5 +89,10 @@ class MainPageController extends Controller
 
         return view('client.recept_page',['receipt' => $receipt, 'med' => $med, 'doctor' => $doctor]);
         
+    }
+
+    public function getQrReceipt($id){
+        $receipt = Receipt::where('id',$id)->get();
+        return view('client.receipts')->with('data',$receipt); 
     }
 }

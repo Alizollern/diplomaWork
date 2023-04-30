@@ -79,6 +79,8 @@ Route::group(['middleware' => ['web'], 'prefix' => 'user'], function ($router) {
 	Route::get('medicine_page', [MainPageController::class, 'getMedicines'])->name('hospital.medicines');
 	Route::get('medicine_page/search',[MainPageController::class,'search'])->name('medicines.search');
 
+    Route::get('recipes/{id}', [MainPageController::class, 'getQrReceipt'])->name('recipes.show.qr');
+
 	Route::get('hospital_page',[HospitalController::class,'getHospital'])->name('hospital.name');
   	Route::get('pharmacies_page', [MainPageController::class, 'getPharmacies'])->name('hospital.pharmacies');
     Route::get('myReceipt', [MainPageController::class, 'getReceipt'])->name('client.receipt');

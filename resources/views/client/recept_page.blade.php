@@ -87,7 +87,7 @@
                 </div>
                 @endforeach
                 <div class="pharm_qr">
-                    <img src="../photo/qr_code.png" alt="QR">
+                    <img src="{{ QrCode::size(300)->generate(route('recipes.show.qr', $receipt->id)) }}">
                 </div>
             </div>
         </div>

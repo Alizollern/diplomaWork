@@ -66,7 +66,8 @@
     <div class="container">
         <div class="back_fone">
             <div class="pharm_title">
-                <form action="{{route('client.post.contact')}}" class="price-form" >
+                <form action="{{route('client.post.contact')}}" class="price-form" method="POST">
+                    @csrf
                     <input type="text" name="email" placeholder="Your Email" class="price-input">
                     <textarea name="sms" id="" cols="30" rows="10" placeholder="Your message"></textarea>
                     <button class="button" type="submit">Send</button>
